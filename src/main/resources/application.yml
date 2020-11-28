@@ -1,0 +1,31 @@
+spring:
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  rabbitmq:
+    port: 5672
+    virtual-host: /
+  jooq:
+    sql-dialect: org.hibernate.dialect.MySQL5Dialect
+  profiles:
+    active: local
+springdoc:
+  swagger-ui:
+    operations-sorter: method
+api:
+  integrations:
+    user-info:
+      host: https://user-info.herokuapp.com
+      user:
+        base-path: /users
+        find-cpf: /{cpf}
+default:
+  votacao:
+    section-time: 1
+    result:
+      exchange: votacao.result.exchange
+  automation:
+    agenda: 30000

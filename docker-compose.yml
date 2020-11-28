@@ -1,0 +1,51 @@
+version: '3.8'
+
+networks:
+    votacao-net:
+        driver: bridge
+services:
+    rabbit:
+        container_name: rabbit_votacao
+        hostname: rabbit
+        image: rabbitmq:3.8.8-management
+        networks:
+            - votacao-net
+        environment:
+            - RABBITMQ_DEFAULT_USER=votacao
+            - RABBITMQ_DEFAULT_PASS=votacao
+        expose:
+            - 5672
+            - 15672
+        ports:
+            - "15123:15672"
+    db:
+        container_name: db_votacao
+        image: mariadb:10.2
+        environment:
+            - MYSQL_ROOT_PASSWORD=@qwe123@
+            - MYSQL_DATABASE=votacao
+            - MYSQL_USER=votacao
+            - MYSQL_PASSWORD=votacao
+        networks:
+            - votacao-net
+        expose:
+            - 3306
+        ports:
+            - "15124:15672"
+        restart: on-failure
+        volumes:
+            - database:/var/lib/mysql
+    app:
+        container_name: votacao
+        build: .
+        networks:
+            - votacao-net
+        ports:
+            - "15125:8080"
+        environment:
+            - SPRING_PROFILES_ACTIVE=prd
+        depends_on:
+            - rabbit
+            - db
+volumes:
+    database:

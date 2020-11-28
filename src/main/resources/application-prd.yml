@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:mysql://db:3306/votacao?createDatabaseIfNotExist=true
+    password: votacao
+    username: votacao
+  rabbitmq:
+    username: votacao
+    password: votacao
+    host: rabbit
