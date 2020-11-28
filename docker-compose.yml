@@ -31,7 +31,7 @@ services:
         expose:
             - 3306
         ports:
-            - "15124:15672"
+            - "15124:3306"
         restart: on-failure
         volumes:
             - database:/var/lib/mysql
