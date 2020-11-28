@@ -18,7 +18,7 @@ $ docker-compose up --build -d
 ```
 Utilizando Maven:
 > 1. Necessário ter o MySQL/MariaDB e o RabbitMQ instalado
-> 2. Corrigir os apontamentos em application-local.yml
+> 2. Ajustar as configurações em application-local.yml
 ```sh
 $ mvn clean install
 $ mvn spring-boot:run
