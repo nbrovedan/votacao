@@ -4,6 +4,8 @@
 
 Votação requer os seguintes programas:
 * [Java](https://jdk.java.net/java-se-ri/11): v11 (caso seja iniciado utilizando Maven)
+* [MariaDB](https://downloads.mariadb.org/mariadb/): v10.2 ou superior (caso seja iniciado utilizando Maven)
+* [RabbitMQ](https://www.rabbitmq.com/download.html): v3.7.17 ou superior (caso seja iniciado utilizando Maven)
 * [Docker](https://docs.docker.com/desktop/): v19.03 ou superior (caso seja iniciado usando Docker)
 * [Git](https://git-scm.com/downloads/): v2.0 ou superior
 
