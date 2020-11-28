@@ -3,8 +3,8 @@
 ### Instalação
 
 Votação requer os seguintes programas:
-* [Java](https://jdk.java.net/java-se-ri/11): v11
-* [Docker](https://docs.docker.com/desktop/): v19.03 ou superior
+* [Java](https://jdk.java.net/java-se-ri/11): v11 (caso seja iniciado utilizando Maven)
+* [Docker](https://docs.docker.com/desktop/): v19.03 ou superior (caso seja iniciado usando Docker)
 * [Git](https://git-scm.com/downloads/): v2.0 ou superior
 
 Baixar o repositório:
