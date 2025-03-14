@@ -4,7 +4,7 @@
 
 ##### Baixar o repositório:
 Requisito:
-* [Git](https://git-scm.com/downloads/): v2.0 ou superior
+* [Git](https://git-scm.com/downloads/): v2.0+
 ```sh
 $ git clone https://github.com/nbrovedan/votacao.git
 ```
