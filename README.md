@@ -2,7 +2,7 @@
 
 ### Instalação
 
-##### Baixar o repositório:
+##### Clonar o repositório:
 Requisito:
 * [Git](https://git-scm.com/downloads/): v2.0 ou superior
 ```sh
