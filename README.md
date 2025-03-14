@@ -4,7 +4,7 @@
 
 ##### Clonar o repositório a partir do git:
 Requisito:
-* [Git](https://git-scm.com/downloads/): v2.0 ou superior
+* [Git](https://git-scm.com/downloads/): v2.0+
 ```sh
 $ git clone https://github.com/nbrovedan/votacao.git
 ```
@@ -34,3 +34,5 @@ Após terminar de subir, os serviços estarão acessíveis nos seguintes endere�
 * [Backend](http://localhost:15125/swagger-ui.html)
 * [RabbitMQ](http://localhost:15123/)
 * [Banco de dados](http://localhost:15124)
+
+Para finalizar, só fechar.
